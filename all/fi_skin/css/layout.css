@@ -1,0 +1,27 @@
+﻿
+
+/* element styles*/
+body { font-family: georgia, serif; font-size: 100%; text-align:left; background: white; }
+pre,code { display:block; white-space:pre-wrap; text-align:left; margin:0; border:0; vertical-align:baseline; padding:0.3em; width:auto;  font-family:Consolas,Courier New,Courier; font-size:90%;  background-color:#F0F0F0;  }
+
+/* typographics */
+p,ul,pre,code { margin-bottom:1.5em; color:#111; letter-spacing: .01em; line-height: 1.4em;  }
+h1 { font-size: 1.4em; }
+h2 { font-weight:bold; margin-bottom:0.5em; }
+label { display: block; clear:both;}
+
+/* logo */
+h1#logo { display:block; width:336px;  clear:both; margin-bottom:2em; }
+h1#logo a { display:block; height:30px; width:336px; font-size:1px; overflow:hidden; text-indent:-9999em; 
+    background:transparent url(../img/mrSkinner_logo.png) no-repeat scroll 0 0; 
+}
+
+/* layout */
+.wrapper {  margin: 4em auto; width: 30em;  }
+.section { margin-bottom: 3em; }
+.pre {margin-bottom: 0;}
+
+/* table */
+table { width: auto; font-size:0.8em;  }
+table caption { display: none; }
+table td, table th { padding:0.4em; border: 1px solid silver;  }

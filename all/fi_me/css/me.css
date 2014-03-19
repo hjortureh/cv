@@ -1,0 +1,99 @@
+﻿
+
+
+/* Elements styles */
+body { font-family:"Lucida Sans Unicode","Lucida Sans",Arial,Helvetica,sans-serif,Verdana; font-size: 85%; font-style:normal; padding: 5em; background:#EEE; }
+ul { margin-bottom: 1em; }
+ul li { font-size:0.95em; list-style-type:none; margin-bottom: 0.9em;  }
+strong { font-weight: bold; }
+
+/* Typographics  */
+p { margin-bottom:.5em; line-height: 1.6em; color: #111;  }
+h2 { font-family: Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif; font-size: 1.6em;  letter-spacing:.03em; margin-bottom: 1em; font-weight: 400; color: #4B4742; }
+h3 { font-family: Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif; font-size: 1.4em;  letter-spacing:.03em; margin-bottom: 1em; font-weight: 400; color: #4B4742; }
+
+/* Links */
+a { color: #1e769b; text-decoration: underline; cursor: pointer; }
+a:hover { color:#ff9c00;text-decoration:underline;}
+
+/* Layout */
+#doc { margin: 0 auto; width: 57.69em; min-width: 750px; background: white; border: 1px solid black; }
+#hd { height:14em; padding: 0 3em; }
+#bd { padding: 0 3em 4em 3em; } 
+#ft { height:3em; padding: 0 3em; }
+
+/* Header */
+div#hd h1#logo { margin-top:4em; width:71px; float:left; }
+div#hd h1#logo a { 
+    display:block; height:71px; width:240px; font-size:1px; overflow:hidden; text-indent:-9999em; 
+    background:transparent url(../img/me4.gif) no-repeat scroll 0 0; 
+}
+
+/* Intro */
+div#intro { width: 40em; margin-bottom:3em; }
+div#intro p { margin-bottom: 1em; }
+div#intro h3 { font-size: 1em;font-weight:bold; margin-top: .5em; }
+div#intro a.more, a.less { font-size: 0.95em; }
+div#intro div.more { display: none; }
+
+
+/* Fieldset */
+fieldset {  }
+fieldset legend { display:none;}
+fieldset h2 { display:block; float:left; width:4em; margin-right:1em; text-align:right; font-family: Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif; font-size: 2em; font-weight:normal; color: silver; }
+
+fieldset .step { clear:both; margin-bottom: 2em; }
+fieldset .group { display:block; float:left; width:30em; margin-bottom: 2em;   } 
+fieldset .buttons { display:block; float:left; margin-left:10em; margin-bottom: 10em; }
+
+/* form messages*/
+fieldset div#formMessage h3 { padding:1em; color:white; margin-bottom:2em;  }
+fieldset div#formMessage h3.success { background:green; }
+fieldset div#formMessage h3.error { background:red; }
+
+/* Fieldset labels */
+fieldset label { display:block; clear:both; margin-bottom: .6em;  }
+fieldset label.em { font-family: Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif; font-size: 1.4em;  letter-spacing:.03em;  font-weight: 400; color: #4B4742; }
+fieldset label.error {  color: red; }
+
+/* Fieldset input */
+fieldset input { border:solid 1px silver; font-size: 1.2em; width:8em;  padding: 0.2em;  margin-bottom: 0.4em; }
+fieldset input.error { border:solid 1px yellow; }
+fieldset input:focus { border:solid 1px orange;}
+
+fieldset input[type="submit"]:hover { color:White; background:gray; border:solid 1px orange;  }
+
+fieldset input[disabled] { border: 1px solid #999; background-color: #ddd; }
+
+/* Fieldset input sizes */
+fieldset input.ssn1 { width:2em; }
+fieldset input.ssn2 { width:3em; }
+fieldset input.ssn3 { width:4em; }
+fieldset input.names { width:16em; }
+
+
+/* Footer */
+div#card { display:block; float:left; background:black; height:3em; width:30em; }
+div#card p { color:white;  margin: 0.5em; }	
+
+/* w3c standard complience */
+div#standards { display:block; float:right; }
+div#standards a { display:block; float:left; font-size:1px; overflow:hidden; text-indent:-9999em;  height:31px; width:88px; }
+div#standards a#validHtml { background: url(../img/valid_xhtml_gray.gif) no-repeat; }
+div#standards a#validHtml:hover { background: url(../img/valid_xhtml.gif) no-repeat; }
+div#standards a#validCss { background: url(../img/valid_css_gray.gif) no-repeat; }
+div#standards a#validCss:hover { background: url(../img/valid_css.gif) no-repeat; }
+
+
+/* CSS Helpers */
+.error { color:Red; }
+.hidden { display:none; }
+
+/* Colors */
+.dark {color:#464646; }
+.light { color:#f0f0f0; }
+.orange { color:#ff9c00; } 
+.blue { color:#1e769b; }
+.lightblue { color: #3399cc; }
+.green {color:#76a843;} 
+.red { color:#cc0000; }

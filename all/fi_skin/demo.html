@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mr Skinner - The skinnable dropdown component</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />          
+       
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/mrskinner.css" type="text/css" media="all" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+            
+            <div class="section">
+                <h1 id="logo"><a href="index.html">Mr. Skinner - The skinnable dropdown</a></h1>
+                <h2>Default skin:</h2>
+                <p>
+                    <label for="demo1">Tech Companies:</label>
+                    <select id="demo1" name="demo1" tabindex="1">                	  
+      	                <option>Microsoft</option>  
+                        <option>Apple</option>  
+                        <option>Google</option>    
+                        <option>Intel</option>    
+                        <option>Dell</option>    
+                        <option>IBM</option>                       
+                	</select>                    
+                </p> 
+                <h2>Retro skin:</h2>
+                <p>
+                    <label for="demo2">Swedish companies:</label>
+                    <select id="demo2" name="demo2" tabindex="2">                	  
+                       <option>Volvo</option>  
+                        <option>Ericsson</option>  
+                        <option>Google</option>    
+                        <option>Vattenfall</option>    
+                        <option>Skanska</option>    
+                        <option>Sony Ericsson Mobile Communications AB</option>   
+                        <option>Svenska Cellulosa Aktiebolaget</option>    
+                        <option>Electrolux</option>    
+                        <option>Personvagnar</option>   
+                        <option>TeliaSonera</option>    
+                        <option>Sandvik</option>    
+                        <option>Scania</option> 
+                        <option>ICA</option> 
+                        <option>Hennes & Mauritz</option>               	  
+                	</select>                    
+                </p> 
+                <h2>Pink skin:</h2>
+                <p>
+                    <label for="demo3">Swedish cities:</label>
+                    <select id="demo3" name="demo3" tabindex="3">                	  
+                        <option>Stockholm</option>  
+                        <option>Goteborg</option>  
+                        <option>Malmo</option>    
+                        <option>Uppsala</option>    
+                        <option>Vasteras</option>          
+                	</select>                    
+                </p> 
+                <h2>Zebra skin:</h2>
+                <p>
+                    <label for="demo4">Djur:</label>
+                    <select id="demo4" name="demo4" tabindex="4">                	  
+                        <option>Katt</option>  
+                        <option>Hund</option>  
+                        <option>Fagel</option>    
+                        <option>Fisk</option>    
+                        <option>Gris</option>   
+                         <option>Far</option>    
+                        <option>Lamm</option>    
+                        <option>Hast</option>   
+                         <option>Ko</option>    
+                        <option>Björn</option>    
+                        <option>Orm</option>       	  
+                	</select>                    
+                </p> 
+                <h2>Baby skin:</h2>
+                <p>
+                    <label for="demo5">Farg:</label>
+                    <select id="demo5" name="demo5" tabindex="5">                	  
+                      <option value='default'>Brun</option>
+                      <option value='retro'>Svart</option>
+                      <option value='pink'>Vinröd</option>
+                      <option value='zebra'>Röd</option>
+                      <option value='baby'>Grön</option>  
+                      <option value='zebra'>Rosa</option>
+                      <option value='baby'>Vit</option>    
+                	</select>                    
+                </p> 
+                <h2>Apply to all:</h2>
+                <p>
+                    <label for="demo6">Choose a skin:</label>
+                    <select id="demo6" name="demo6" tabindex="6">                	  
+                      <option value='default'>Default</option>
+                      <option value='retro'>Retro</option>
+                      <option value='pink'>Pink</option>
+                      <option value='zebra'>Zebra</option>
+                      <option value='baby'>Baby</option>        	  
+                	</select>                    
+                </p>       
+                <p>
+                    <a href="index.html">Go back to home page</a>
+                </p>
+         
+                  
+            </div>
+            
+     <!-- include javascript -->
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mrskinner.js"></script>
+	
+    <script type="text/javascript">
+        $(function () {
+            $("#demo1").mrSkinner({ skin: "default", focus: true });
+            $("#demo2").mrSkinner({ skin: "retro" });
+            $("#demo3").mrSkinner({ skin: "pink" });
+            $("#demo4").mrSkinner({ skin: "zebra" });
+            $("#demo5").mrSkinner({ skin: "baby" });
+
+            $("#demo6").change(function () {
+                $.mrSkinner({ skin: $(this).val() });
+            });
+            
+        });    
+	</script>
+</body>
+
+</html>

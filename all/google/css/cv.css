@@ -1,0 +1,48 @@
+﻿/* tags */
+body { font-family:"Lucida Grande","Lucida Sans Unicode",sans-serif; line-height:1.3em; background: #CCCCCC }
+h2 { font-size: 1.15em; margin-bottom:1.2em; }
+h3 { font-weight:bold; color: #333333; margin: 0 1em 0.5em 0; float: left;}
+h3 a { color: #333333; text-decoration:underline;}
+h3 a:hover { color:Blue; }
+p { line-height: 1.5em; }
+em { font-style: italic;  }
+
+/* layout */
+#doc { background: white; }
+#hd{ display: none;	}
+#bd { padding: 3em 4em 3em 4em; }
+#ft { text-align: center; padding: 3em 0 3em 0; font-size: .9em;}
+
+/* basic info */ 
+ul#cv-base { width: 80%; }
+ul#cv-base li { display:block; clear:both; margin-bottom: 20px;}
+ul#cv-base li p.cv-label { float: left; }
+ul#cv-base li p.cv-fact  { text-align: right; }
+
+img#cv-image{ vertical-align:top; float: right; border: 1px solid silver; padding: 0.2em;}
+
+ul#cv-methods { display:block; clear:both; margin-top: 1em; float: right; text-align:right; padding: 0.2em }
+ul#cv-methods li { margin-bottom:0.5em; }
+
+
+/* main content */ 
+.cv-group { margin-bottom:3.5em;}
+.cv-item { margin: 0 0 2em 0;   }
+.cv-more { display:none; clear:both; }
+.cv-subtitle {  color:#333333; float:left;}
+p.cv-desc, ul.cv-desc li { margin-bottom:0.5em; clear:both;}
+
+div#cv-main ul li { list-style-type:circle; margin-left: 30px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+

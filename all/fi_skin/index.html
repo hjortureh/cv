@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mr Skinner - The skinnable dropdown component</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />          
+       
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/mrskinner.css" type="text/css" media="all" />
+    
+</head>
+
+<body>
+    <div class="wrapper">
+            
+            <div class="section">
+                <h1 id="logo"><a href="index.html">Mr. Skinner - The skinnable dropdown</a></h1>
+            	<p>mrSkinner is a reusable javascript plugin to create a nice-looking skinnable dropdown.</p>
+                <p>The dropdown can be applied on html select elements and has build-in skins such as retro, pink, zebra and more. Its easy to add your own skins with css. </p>
+        	</div>
+
+            <div class="section">
+            	<h2>Demo:</h2>
+                <p>
+                    <label for="skins">Choose a skin:</label>
+                    <select id="skins" name="skins" tabindex="1">                	  
+                      <option value='default'>Default</option>
+                      <option value='retro'>Retro</option>
+                      <option value='pink'>Pink</option>
+                      <option value='zebra'>Zebra</option>
+                      <option value='baby'>Baby</option>        	  
+                	</select>                    
+                </p> 
+                <p><a href="demo.html">View more demos</a> </p>           
+                  
+            </div>
+
+            <div class="section">
+                <h2>Usage</h2>
+                <!-- <p class="pre">Include <a href="js/jquery-1.4.2.js">jQuery</a> and <a href="js/jquery.mrskinner.js">jquery.mrskinner.js</a></p>
+                <code>"<script type="text/javascript" src="js/jquery-1.4.2.js"></script><script type="text/javascript" src="js/jquery.mrskinner.js"></script>"</code>
+                <p class="pre">Include the stylesheet, with any of your mods.</p>
+                <code>"<link rel="stylesheet" href="css/mrskinner.css" type="text/css" media="all" />"</code>
+                <p class="pre">Create the Html select element</p>
+                <code></code> -->
+                <p class="pre">Skins can be applied to all select elements with one method call.</p>
+                <pre>$.mrSkinner({skin: "black"});</pre>
+                <p class="pre">Skins can also been applied to a single or selected elements.</p>
+                <pre>$("select#target").mrSkinner({skin: "rainbow"});</pre>
+            </div>
+
+            <div class="section">
+                <h2>How does it work ?</h2>
+            	<p>
+                    The problem with the Html select element is that it has very limited ways to change the layout, apart from a changing the color, background color and font adjustments.
+                </p>
+                <p>
+                    To provide more ways of playing with the layout mrSkinner creates a dropdown component using input box and a unordered list that allows full flexibility with css stylesheets. 
+                </p>
+                <p>
+                    The dropdown has additional css classess for hover, selected and zebra state.
+                </p>
+            	<p>
+                    <strong>Good Accessabilty:</strong> The dropdown supports keyboard shortcuts and tabindex to provice good accessability.
+                </p>     
+                <p>
+                    <strong>Graceful fallback:</strong> If javascript is disabled on the client the dropdown component gracefully degrades to a standard Html select element.
+                </p>       
+            </div> 
+    </div>
+
+     <!-- include javascript -->
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mrskinner.js"></script>
+	
+    <script type="text/javascript">
+        $(function () {
+
+            $("#skins").mrSkinner({ focus: true });
+
+            $("#skins").change(function () {
+                $.mrSkinner({ skin: $(this).val() });
+            });
+
+        });    
+	</script>
+</body>
+
+</html>

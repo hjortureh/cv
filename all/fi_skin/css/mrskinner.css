@@ -1,0 +1,51 @@
+/* dropdown base styles*/
+div.dropdown input {  width: 14em; padding: 0.4em; height: 1.4em; font-size: 0.9em;  }
+div.dropdown input, div.dropdown ul  { margin: 0; }
+div.dropdown ul { display: none; position: absolute; z-index: 999; width: 30em;  font-size: 0.9em; background: white; }
+div.dropdown ul li { display: block; clear: both; list-style: none; cursor: pointer; padding: 0.4em; border: none; }
+
+/* 
+* Default skin 
+*/ 
+div.dropdown .default input { background: url(../img/default_down_bg.png) no-repeat 13em; }
+div.dropdown .default input.open { background-image: url(../img/default_up_bg.png); }
+div.dropdown .default input.hover  { border: 1px solid orange; }
+div.dropdown .default input, div.dropdown ul  { border: 1px solid silver; }
+div.dropdown .default ul li.zebra  { background: #EEE; }
+div.dropdown .default ul li.selected { background: orange; }
+div.dropdown .default ul li.hover  { background: lightblue; }
+
+/*
+* Retro skin
+*/
+div.dropdown .retro input, div.dropdown .retro ul  { border: 1px solid brown; color: #333; font-style: italic; }
+div.dropdown .retro input  { background: white url(../img/retro_item_bg.png) no-repeat top right; }
+div.dropdown .retro input.hover  { border: 1px solid red; }
+div.dropdown .retro ul li.hover  { color: red; background: none; }
+div.dropdown .retro ul  { background: white url(../img/retro_list_bg.png) no-repeat bottom right; }
+
+/*
+* Baby   
+*/
+div.dropdown .baby input, div.dropdown .baby ul  { border: 1px dashed pink; font-family: verdana; color:red; }
+div.dropdown .baby input  { background: white url(../img/baby_bg.png) no-repeat 40px 0px; }
+div.dropdown .baby ul  { background: white url(../img/baby_bg.png) no-repeat 40px -28px; }
+
+/*
+* Pink
+*/
+div.dropdown .pink input { background: #EE2B7B url(../img/pink_down_bg.gif) no-repeat 12em; border: none;  }
+div.dropdown .pink input.open { background-image: url(../img/pink_up_bg.gif);  }
+div.dropdown .pink ul { border: 1px solid white; background: #EE2B7B; }
+div.dropdown .pink input, div.dropdown .pink ul {  color: white; font-weight: bold; -moz-border-radius:10px; -webkit-border-radius:10px; }
+div.dropdown .pink ul li.hover {background: #f594a2; }
+div.dropdown .pink ul li.selected {color: black; }
+
+/*
+* Zebra
+*/
+div.dropdown .zebra input {  }
+div.dropdown .zebra ul { }
+div.dropdown .zebra input, div.dropdown .zebra ul { font-family: consolas,courier new,courier; border:1px solid black; }
+div.dropdown .zebra ul li.zebra { color: White; background: black;  }
+div.dropdown .zebra ul li.hover {color: gray; }
